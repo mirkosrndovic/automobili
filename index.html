@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Automobili</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/icomoon.css" />
+        <meta name="author" content="Mirko Srndovic">    
+    </head>
+    <body>
+        <h1 class="main-title">AUTOMOBILI</h1>
+
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="search-input" maxlength="50" placeholder="Unesite naziv automobila...">
+            <button id="searchButton" class="search-button"><span class="icon-search"></span></button>
+        </div>
+
+        <div class="js-cars-wrapper cars-wrapper"><!-- Populated with js from show-data.js--></div>
+
+        <div class="js-track-wrapper track-wrapper">
+            <div class="js-tracks">
+                <div class="js-track-header track-header"><!-- <i class="js-distance-meter tfm" data-distance="' + i + '"></i> from distance.fragments.js --></div>
+            </div>
+
+            <div class="js-speed-limit-signs-wrapper"></div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="animationSpeedInput" class="animation-speed-input validate-input js-validate-input" placeholder="Brzina animacije" required>
+            <button class="js-start start">START</button>
+        </div>
+        
+        <script type="text/javascript" src="js/external/jquery.min.js"></script>
+        <script type="text/javascript" src="js/api-data.js"></script>
+        <script type="text/javascript" src="js/show-data.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/select.js"></script>
+        <script type="text/javascript" src="js/distance-fragments.js"></script>
+        <script type="text/javascript" src="js/speed-limits.js"></script>
+        <script type="text/javascript" src="js/traffic-lights.js"></script>
+        <script type="text/javascript" src="js/validate.js"></script>
+        <script type="text/javascript" src="js/start.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>    
+    </body>
+</html>
